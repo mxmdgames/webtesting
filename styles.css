@@ -1,0 +1,239 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 10px;
+    padding: 5px; /* Added 'px' to padding value */
+}
+
+/* Set a background image */
+body {
+    background-image: url('BGimg.png'); /* Use your own background image */
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: #fff; /* White text */
+}
+
+/* Header Styles */
+header {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #ffcc00; /* Yellow text */
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.8); /* Text shadow for a retro effect */
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffcc00; /* Yellow text */
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Wider letter spacing for a retro look */
+}
+
+/* Products Section Styles */
+.products {
+    padding: 20px;
+}
+
+.product {
+    background-image: url('img.png'); /* Yellow background */
+    border: 2px solid #ff6600; /* Orange border */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2); /* Box shadow for a card effect */
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #fff; /* White border for images */
+}
+
+.product h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #fff; /* White text */
+}
+
+.product p {
+    margin: 10px 0;
+    color: #fff; /* White text */
+}
+
+/* Footer Styles */
+footer {
+    background-color: transparent;
+    text-align: center;
+    padding: 10px;
+    color: #ffcc00; /* Yellow text */
+}
+
+/* Sprite Styles */
+#sprite {
+    width: 250px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    background-image: url('Sprite-BRRR.gif'); /* Replace with your sprite image */
+    position: absolute;
+    top: 1500px;
+    left: 400px;
+    animation: fadeIn 2s infinite; /* Animation with 2-second duration, infinite loop */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Completely transparent */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+    }
+}
+
+#sprite2 {
+    width: 250px; /* Adjust as needed */
+    height: 250px; /* Adjust as needed */
+    background-image: url('Sprite-TRUCKWSHANNONANDWARREN.gif'); /* Replace with your sprite image */
+    position: absolute;
+}
+
+/* Bouncing Element Styles */
+#bouncing-element {
+    width: 500px;
+    height: 500px;
+    background-image: url('Sprite-BRRR.gif'); /* Orange background */
+    position: absolute;
+    top: 350px; /* Corrected the 'px' unit */
+    left: 600px; /* Corrected the 'px' unit */
+    animation: bounce 2s infinite; /* Animation with 2-second duration, infinite loop */
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Initial and final position */
+    }
+    50% {
+        transform: translateY(300px); /* Bounce height (adjust as needed) */
+    }
+}
+/* slide in Element Styles */
+#slideIn-element {
+    width: 250px;
+    height: 250px;
+    background-image: url('Sprite-MYTRUCK.gif'); /* Orange background */
+    position: absolute;
+    top: 100px; /* Corrected the 'px' unit */
+    left: 100px; /* Corrected the 'px' unit */
+    animation: slideIn 2s infinite; /* Animation with 2-second duration, infinite loop */
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(+100%); /* Start off-screen left */
+    }
+    100% {
+        transform: translateX(0); /* End at its original position */
+    }
+}
+
+/* Spinning Element Styles */
+#spinning-element {
+    width: 250px;
+    height: 200px;
+    background-image: url('Sprite-BRRR.gif'); /* Orange background */
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: spin 2s infinite; /* Animation with 2-second duration, infinite loop */
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg); /* Start at 0 degrees */
+    }
+    100% {
+        transform: rotate(360deg); /* Complete one full rotation */
+    }
+}
+
+element.style {
+    display: none;
+}
+img[Attributes Style] {
+    height: 1px;
+    aspect-ratio: auto 1 / 1;
+    width: 1px;
+}
+user agent stylesheet
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+/* ... Your existing styles ... */
+
+/* Scrolling Marquee Styles */
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex; /* Make the container a flex container */
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 20s linear infinite; /* Double the duration to maintain the same speed */
+}
+
+/* Define a keyframes animation for the scrolling marquee */
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/* Sprite for falling animation */
+#falling-element {
+    width: 1000px; /* Adjust as needed */
+    height: 1000px; /* Adjust as needed */
+    background-image: url('Sprite-BRRR.gif'); /* Replace with your sprite image */
+    position: absolute;
+    top: -50px; /* Start above the viewport */
+    left: 0%; /* Center horizontally */
+    animation: fall 4s linear infinite; /* Animation with 4-second duration, infinite loop */
+    animation: spin 4s infinite;
+    z-index: -1; /* Behind other content */
+}
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg); /* Start at 0 degrees */
+    }
+    100% {
+        transform: rotate(360deg); /* Complete one full rotation */
+    }
+}
+@keyframes fall {
+    0% {
+        transform: translateY(-50px); /* Start above the viewport */
+    }
+    100% {
+        transform: translateY(100vh); /* End below the viewport */
+            0% {
+
+    }
+
+
